@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './ratingPage.css'
 
 function RatingPage () {
-  const [players, setPlayers] = useState([]);
+  // const [players, setPlayers] = useState([]);
 
-  const samplePlayersData =[
-    { nickname: "Username 1", time: "-", level: "Easy" },
-    { nickname: "Username 2", time: "-", level: "Medium" },
-    { nickname: "Username 3", time: "-", level: "Hard" },
-  ];
+  // const samplePlayersData =[
+  //   { nickname: "Username 1", time: "-", level: "Easy" },
+  //   { nickname: "Username 2", time: "-", level: "Medium" },
+  //   { nickname: "Username 3", time: "-", level: "Hard" },
+  // ];
 
-  useEffect(() => {
-    setPlayers(samplePlayersData);
-  }, []);
+  // useEffect(() => {
+  //   setPlayers(samplePlayersData);
+  // }, []);
   return (
     <main className='ratingPageContainer'>
       <h1>Top 10 Players</h1>

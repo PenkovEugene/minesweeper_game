@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './settingsPage.css'
 
 function SettingsPage () {
-  const [nickname, setNickname] = useState('Ghost');
+  // const [nickname, setNickname] = useState('Ghost');
 
-  const handleNicknameChange = (e) => {
-    setNickname(e.target.value);
-  };
+  // const handleNicknameChange = (e) => {
+  //   setNickname(e.target.value);
+  // };
 
   return (
     <main className='settingsPageContainer'>
@@ -22,9 +22,9 @@ function SettingsPage () {
         <h2>Choose the difficulty of the game</h2>
       </div>
       <div className="levelButtonsContainer">
-        <button className='easyLevelButton'><Link to={{ pathname: "/settings/easy", state: { nickname } }}>Easy 8x8, ~10 min</Link></button>
-        <button className='mediumLevelButton'><Link to={{ pathname: "/settings/medium", state: { nickname } }}>Medium 16x16, ~40 min</Link></button>
-        <button className='hardLevelButton'><Link to={{ pathname: "/settings/hard", state: { nickname } }}>Hard 32x16, ~100 min</Link></button>
+        <button className='easyLevelButton'><Link to="/settings/easy">Easy 8x8, ~10 min</Link></button>
+        <button className='mediumLevelButton'><Link to="/settings/medium">Medium 16x16, ~40 min</Link></button>
+        <button className='hardLevelButton'><Link to="/settings/hard">Hard 32x16, ~100 min</Link></button>
       </div>
     </main>
   )
