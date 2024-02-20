@@ -1,0 +1,45 @@
+.settingsPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+  color: white;
+  font-size: 18px;
+}
+.settingsPageContainer .nicknameFormConteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.settingsPageContainer .nicknameFormConteiner .inputWrapper {
+  background-color: gray;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.settingsPageContainer .levelTextContainer {
+  display: flex;
+  margin-bottom: 3em;
+}
+.settingsPageContainer .levelButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.settingsPageContainer .levelButtonsContainer button {
+  padding: 20px 25px;
+  font-size: 16px;
+}
+
+@media (min-width: 750px) {
+  .settingsPageContainer {
+    font-size: 25px;
+  }
+  .settingsPageContainer .levelButtonsContainer button {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=settingsPage.css.map */

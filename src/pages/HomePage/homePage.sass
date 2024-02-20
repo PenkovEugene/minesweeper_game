@@ -1,0 +1,34 @@
+.homePageContainer
+  display: flex
+  flex-direction: column
+  flex: 1 0 auto
+
+  .logoContainer
+    display: flex
+    justify-content: center
+    
+    img
+      width: 75%
+
+  .buttonContainer
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 250px
+
+
+    img
+      height: 1em
+      margin-left: 20px
+      filter: invert(80%)
+
+@media (min-width: 550px)
+  .homePageContainer
+    font-size: 25px
+
+    .buttonContainer
+      display: flex
+      justify-content: center
+      button
+        font-size: 25px
+        min-width: 400px

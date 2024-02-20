@@ -1,0 +1,37 @@
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+.homePageContainer .logoContainer {
+  display: flex;
+  justify-content: center;
+}
+.homePageContainer .logoContainer img {
+  width: 75%;
+}
+.homePageContainer .buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+.homePageContainer .buttonContainer img {
+  height: 1em;
+  margin-left: 20px;
+  filter: invert(80%);
+}
+
+@media (min-width: 550px) {
+  .homePageContainer {
+    font-size: 25px;
+  }
+  .homePageContainer .buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .homePageContainer .buttonContainer button {
+    font-size: 25px;
+    min-width: 400px;
+  }
+}/*# sourceMappingURL=homePage.css.map */

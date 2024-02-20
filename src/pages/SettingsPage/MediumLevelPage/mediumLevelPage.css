@@ -1,0 +1,130 @@
+.mediumLevelPageContainer {
+  display: grid;
+  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, #828282, #303030);
+  min-width: 80%;
+  flex: 1 0 auto;
+  border-radius: 35px;
+  box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.167), 10px 25px 30px rgba(0, 0, 0, 0.167), -10px 25px 30px rgba(0, 0, 0, 0.167);
+}
+
+.mediumGridContainer {
+  display: grid;
+  background: #000;
+}
+.mediumGridContainer table td {
+  border: 1px solid #fff;
+  background-color: #999;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+.mediumGridContainer table td.open {
+  background-color: #333;
+  color: white;
+}
+.mediumGridContainer table td.active {
+  background-color: #d84315;
+  color: black;
+  border: red;
+  font-size: 8px;
+}
+.mediumGridContainer table td.open.number-1 {
+  background-color: blue;
+}
+.mediumGridContainer table td.open.number-2 {
+  background-color: green;
+}
+.mediumGridContainer table td.open.number-3 {
+  background-color: red;
+}
+.mediumGridContainer table td.open.number-4 {
+  background-color: navy;
+}
+.mediumGridContainer table td.open.number-5 {
+  background-color: brown;
+}
+.mediumGridContainer table td.open.number-6 {
+  background-color: cyan;
+}
+.mediumGridContainer table td.open.number-7 {
+  background-color: black;
+}
+.mediumGridContainer table td.open.number-8 {
+  background-color: white;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.optionsContainer .timerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 25px;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.optionsContainer .buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.optionsContainer .buttonContainer button {
+  width: 70%;
+  padding: 10px 10px;
+}
+
+@media (min-width: 720px) {
+  .mediumLevelPageContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    padding-left: 20px;
+  }
+  .mediumLevelPageContainer .mediumGridContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.7);
+  }
+  .mediumLevelPageContainer .optionsContainer {
+    gap: 20px;
+  }
+  .mediumLevelPageContainer .optionsContainer .timerContainer {
+    flex-direction: column;
+  }
+  .mediumLevelPageContainer .optionsContainer .buttonContainer {
+    gap: 20px;
+  }
+}
+@media (min-width: 300px) {
+  .mediumLevelPageContainer .mediumGridContainer {
+    transform: scale(0.7);
+  }
+}
+@media (min-width: 1100px) {
+  .mediumLevelPageContainer .mediumGridContainer {
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 1400px) {
+  .mediumLevelPageContainer .mediumGridContainer {
+    transform: scale(0.9);
+  }
+}
+@media (min-width: 1700px) {
+  .mediumLevelPageContainer .mediumGridContainer {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=mediumLevelPage.css.map */
